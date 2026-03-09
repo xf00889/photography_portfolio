@@ -887,3 +887,16 @@ a {
 .social-chip:not(:hover) {
   will-change: auto;
 }
+
+/* Ensure hero text is always visible - no fading */
+.hero-copy {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.hero-copy h1,
+.hero-copy p,
+.hero-copy a {
+  opacity: 1 !important;
+  visibility: visible !important;
+}

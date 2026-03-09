@@ -64,14 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
       gsap.registerPlugin(ScrollTrigger);
     }
 
-    gsap.from(".hero-copy", {
-      y: 28,
-      opacity: 0,
-      duration: 1.1,
-      ease: "power3.out",
-      stagger: 0.12,
-      delay: 0.2
-    });
+    // Removed hero-copy animation to prevent fading text
 
     gsap.utils.toArray(".section-title").forEach((title) => {
       if (!window.ScrollTrigger) {
