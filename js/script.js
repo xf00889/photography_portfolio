@@ -311,14 +311,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const items = Array.from(slider.children);
     
-    // Duplicate items multiple times for seamless loop
-    const duplicateCount = 3;
-    for (let i = 0; i < duplicateCount; i++) {
-      items.forEach((item) => {
-        const clone = item.cloneNode(true);
-        slider.appendChild(clone);
-      });
-    }
+    // Clone items once to create seamless loop
+    items.forEach((item) => {
+      const clone = item.cloneNode(true);
+      slider.appendChild(clone);
+    });
   };
 
   // Initialize both sliders
