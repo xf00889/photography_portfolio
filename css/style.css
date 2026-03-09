@@ -177,17 +177,16 @@ img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  transform: scale(1.06);
+  transform: scale(1);
   filter: saturate(0.55) brightness(0.44) contrast(1.08);
-  animation: heroZoom 14s ease-in-out infinite alternate;
 }
 
 @keyframes heroZoom {
   from {
-    transform: scale(1.06);
+    transform: scale(1);
   }
   to {
-    transform: scale(1.14);
+    transform: scale(1);
   }
 }
 
