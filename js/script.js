@@ -277,7 +277,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const subject = encodeURIComponent(`Portfolio inquiry from ${name}`);
     const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
     formStatus.textContent = "Opening your default mail app for a direct reply.";
-    window.location.href = `mailto:hello@jzanaia.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:jzanaiasybil@gmail.com?subject=${subject}&body=${body}`;
   });
 
   // Initial render and listeners
