@@ -177,16 +177,17 @@ img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  transform: scale(1);
+  transform: scale(1.06);
   filter: saturate(0.55) brightness(0.44) contrast(1.08);
+  animation: heroZoom 14s ease-in-out infinite alternate;
 }
 
 @keyframes heroZoom {
   from {
-    transform: scale(1);
+    transform: scale(1.06);
   }
   to {
-    transform: scale(1);
+    transform: scale(1.14);
   }
 }
 
@@ -867,4 +868,37 @@ input.contact-input:-webkit-autofill:active {
 .slider-item img {
   content-visibility: auto;
   contain-intrinsic-size: 350px 450px;
+}
+
+/* Optimize button interactions for better INP */
+.group,
+button,
+a {
+  touch-action: manipulation;
+}
+
+/* Reduce paint complexity */
+.hero-copy a,
+.filter-btn,
+.social-chip,
+.contact-link {
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* Optimize hover states */
+@media (hover: hover) {
+  .hero-copy a:hover,
+  .filter-btn:hover,
+  .social-chip:hover {
+    transform: translateY(-2px) translateZ(0);
+  }
+}
+
+/* Remove will-change after interaction */
+.hero-copy a:not(:hover),
+.filter-btn:not(:hover),
+.social-chip:not(:hover) {
+  will-change: auto;
 }

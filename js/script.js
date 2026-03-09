@@ -119,19 +119,26 @@ document.addEventListener("DOMContentLoaded", () => {
     menuToggle.innerHTML = '<i class="ri-close-line"></i>';
   };
 
-  menuToggle?.addEventListener("click", () => {
+  menuToggle?.addEventListener("click", (e) => {
+    e.preventDefault();
     const isOpen = mobileMenu.classList.contains("is-open");
-    if (isOpen) {
-      closeMobileMenu();
-    } else {
-      openMobileMenu();
-    }
-  });
+    
+    // Batch DOM updates
+    requestAnimationFrame(() => {
+      if (isOpen) {
+        closeMobileMenu();
+      } else {
+        openMobileMenu();
+      }
+    });
+  }, { passive: false });
 
   navLinks.forEach((link) => {
     link.addEventListener("click", () => {
-      closeMobileMenu();
-    });
+      requestAnimationFrame(() => {
+        closeMobileMenu();
+      });
+    }, { passive: true });
   });
 
   document.addEventListener("keydown", (event) => {
@@ -181,35 +188,53 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const visibleCards = photoCards.filter((card) => !card.classList.contains("is-hidden"));
-    gsap.fromTo(
-      visibleCards,
-      { opacity: 0, y: 26 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 0.55,
-        stagger: 0.06,
-        ease: "power2.out",
-        overwrite: true
-      }
-    );
+    
+    // Use requestAnimationFrame for better performance
+    requestAnimationFrame(() => {
+      gsap.fromTo(
+        visibleCards,
+        { opacity: 0, y: 26 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.55,
+          stagger: 0.06,
+          ease: "power2.out",
+          overwrite: true
+        }
+      );
+    });
   };
 
   filterButtons.forEach((button) => {
-    button.addEventListener("click", () => {
+    button.addEventListener("click", (e) => {
+      // Prevent default and stop propagation for faster response
+      e.preventDefault();
+      
       const filter = button.dataset.filter;
 
       filterButtons.forEach((item) => item.classList.remove("is-active"));
       button.classList.add("is-active");
 
-      photoCards.forEach((card) => {
-        const category = card.dataset.category;
-        const shouldShow = filter === "all" || category === filter;
-        card.classList.toggle("is-hidden", !shouldShow);
-      });
-
-      animateVisibleCards();
-    });
+      // Use requestIdleCallback for non-critical work
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(() => {
+          photoCards.forEach((card) => {
+            const category = card.dataset.category;
+            const shouldShow = filter === "all" || category === filter;
+            card.classList.toggle("is-hidden", !shouldShow);
+          });
+          animateVisibleCards();
+        });
+      } else {
+        photoCards.forEach((card) => {
+          const category = card.dataset.category;
+          const shouldShow = filter === "all" || category === filter;
+          card.classList.toggle("is-hidden", !shouldShow);
+        });
+        animateVisibleCards();
+      }
+    }, { passive: false });
   });
 
   // Parallax motion for tagged elements
@@ -407,21 +432,26 @@ document.addEventListener("DOMContentLoaded", () => {
   // Star rating interaction
   let selectedRating = 5;
   starButtons.forEach((button, index) => {
-    button.addEventListener("click", () => {
+    button.addEventListener("click", (e) => {
+      e.preventDefault();
+      
       selectedRating = index + 1;
       ratingInput.value = selectedRating;
       
-      starButtons.forEach((btn, i) => {
-        const icon = btn.querySelector("i");
-        if (i < selectedRating) {
-          btn.classList.add("active");
-          icon.className = "ri-star-fill text-2xl";
-        } else {
-          btn.classList.remove("active");
-          icon.className = "ri-star-line text-2xl";
-        }
+      // Batch DOM updates
+      requestAnimationFrame(() => {
+        starButtons.forEach((btn, i) => {
+          const icon = btn.querySelector("i");
+          if (i < selectedRating) {
+            btn.classList.add("active");
+            icon.className = "ri-star-fill text-2xl";
+          } else {
+            btn.classList.remove("active");
+            icon.className = "ri-star-line text-2xl";
+          }
+        });
       });
-    });
+    }, { passive: false });
   });
 
   // Initialize all stars as active (5 stars default)
