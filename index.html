@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jzanaia Sybil Valiao Portal is a luxury photography and digital art portfolio crafted with cinematic storytelling, elegant motion, and premium fullscreen layouts.">
+  <title>Jzanaia Sybil Valiao Portal | Luxury Photography Portfolio</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23080808'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' font-size='28' fill='%23d2c2a4' font-family='Georgia,serif'%3EJ%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css">
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: "#080808",
+            sand: "#d2c2a4",
+            haze: "#f3eee4"
+          },
+          fontFamily: {
+            display: ["Playfair Display", "serif"],
+            sans: ["Manrope", "sans-serif"]
+          },
+          boxShadow: {
+            soft: "0 30px 80px rgba(0, 0, 0, 0.35)"
+          },
+          backgroundImage: {
+            "radial-luxury": "radial-gradient(circle at top, rgba(210, 194, 164, 0.16), transparent 42%)"
+          }
+        }
+      }
+    };
+  </script>
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-ink text-white font-sans antialiased">
+  <div class="site-shell relative overflow-x-hidden">
+    <!-- Dynamic Navbar -->
+    <header id="site-header" class="fixed inset-x-0 top-0 z-50 transition-all duration-500">
+      <div class="mx-auto flex max-w-[1440px] items-center justify-between px-4 py-4 sm:px-6 lg:px-10">
+        <a href="#home" class="brand-mark flex items-center gap-2.5 text-white/90 transition hover:text-white sm:gap-3">
+          <span class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-white/8 text-lg backdrop-blur-xl">J</span>
+          <span class="brand-mark__text">
+            <span>Jzanaia Sybil</span>
+            <span>Valiao Portal</span>
+          </span>
+        </a>
+
+        <nav class="nav-shell hidden items-center gap-8 rounded-full border border-white/10 bg-white/5 px-6 py-3 text-[0.75rem] font-medium uppercase tracking-[0.3em] text-white/75 backdrop-blur-xl lg:flex">
+          <a class="nav-link" href="#home">Home</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#experience">Experience</a>
+          <a class="nav-link" href="#digital-art">Digital Art</a>
+          <a class="nav-link" href="#photography">My Works</a>
+          <a class="nav-link" href="#reviews">Reviews</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+
+        <button id="menu-toggle" class="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/15 bg-white/8 text-xl text-white backdrop-blur-xl transition hover:bg-white/12 lg:hidden" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu">
+          <i class="ri-menu-3-line"></i>
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="mobile-menu pointer-events-none absolute left-0 right-0 top-full mx-4 mt-2 rounded-[2rem] border border-white/10 bg-black/75 px-5 py-5 opacity-0 backdrop-blur-2xl transition-all duration-300 sm:mx-6 lg:hidden">
+        <nav class="flex flex-col gap-2 text-sm uppercase tracking-[0.28em] text-white/75">
+          <a class="mobile-nav-link rounded-2xl px-4 py-3 transition hover:bg-white/10 hover:text-white" href="#home">Home</a>
+          <a class="mobile-nav-link rounded-2xl px-4 py-3 transition hover:bg-white/10 hover:text-white" href="#about">About</a>
+          <a class="mobile-nav-link rounded-2xl px-4 py-3 transition hover:bg-white/10 hover:text-white" href="#experience">Experience</a>
+          <a class="mobile-nav-link rounded-2xl px-4 py-3 transition hover:bg-white/10 hover:text-white" href="#digital-art">Digital Art</a>
+          <a class="mobile-nav-link rounded-2xl px-4 py-3 transition hover:bg-white/10 hover:text-white" href="#photography">My Works</a>
+          <a class="mobile-nav-link rounded-2xl px-4 py-3 transition hover:bg-white/10 hover:text-white" href="#reviews">Reviews</a>
+          <a class="mobile-nav-link rounded-2xl px-4 py-3 transition hover:bg-white/10 hover:text-white" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="relative min-h-screen">
+        <div class="swiper hero-swiper absolute inset-0">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="hero-media has-parallax absolute inset-0" data-parallax="0.2">
+                <img class="h-full w-full object-cover" src="https://picsum.photos/seed/jzanaia-hero-1/1920/1200" alt="Luxury editorial portrait" fetchpriority="high">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="hero-media has-parallax absolute inset-0" data-parallax="0.24">
+                <img class="h-full w-full object-cover" src="https://picsum.photos/seed/jzanaia-hero-2/1920/1200" alt="Cinematic landscape photography" loading="eager">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="hero-media has-parallax absolute inset-0" data-parallax="0.22">
+                <img class="h-full w-full object-cover" src="https://picsum.photos/seed/jzanaia-hero-3/1920/1200" alt="Street photography at dusk" loading="eager">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.58),rgba(0,0,0,0.82)_45%,rgba(0,0,0,0.97))]"></div>
+        <div class="absolute inset-0 bg-radial-luxury"></div>
+
+        <div class="relative z-10 flex min-h-screen items-end px-4 pb-10 pt-28 sm:px-6 md:items-center md:pb-24 lg:px-10">
+          <div class="mx-auto grid w-full max-w-[1440px] gap-10 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-end">
+            <div class="max-w-5xl">
+              <p class="hero-copy mb-6 text-xs font-semibold uppercase tracking-[0.5em] text-sand/80">Luxury Photography Portfolio</p>
+              <h1 class="hero-copy max-w-5xl font-display text-[3.6rem] uppercase leading-[0.9] text-white sm:text-[4.8rem] md:text-[5.8rem] lg:text-[6.7rem] xl:text-[7.5rem]">
+                <span class="block">Capturing</span>
+                <span class="block">Moments</span>
+                <span class="block text-haze/85">Through Light</span>
+              </h1>
+              <p class="hero-copy mt-6 max-w-2xl text-base leading-8 text-white/70 sm:text-lg">
+                Editorial portraiture, event coverage, and digital compositions shaped with shadow, atmosphere, and refined detail.
+              </p>
+
+              <div class="hero-copy mt-10 flex flex-col gap-4 sm:flex-row">
+                <a href="#photography" class="group inline-flex items-center justify-center gap-3 rounded-full border border-sand/60 bg-sand px-7 py-4 text-xs font-bold uppercase tracking-[0.32em] text-black transition duration-300 hover:scale-[1.02] hover:bg-white">
+                  View My Work
+                  <i class="ri-arrow-right-line text-base transition group-hover:translate-x-1"></i>
+                </a>
+                <a href="#about" class="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/5 px-7 py-4 text-xs font-semibold uppercase tracking-[0.3em] text-white/80 backdrop-blur-xl transition hover:border-white/40 hover:bg-white/10 hover:text-white">
+                  Explore the Story
+                </a>
+              </div>
+            </div>
+
+            <aside class="hero-copy self-end rounded-[2rem] border border-white/10 bg-white/5 p-6 backdrop-blur-2xl lg:mb-6">
+              <div class="space-y-5">
+                <div>
+                  <p class="text-[0.7rem] uppercase tracking-[0.35em] text-white/45">Selected Focus</p>
+                  <p class="mt-3 font-display text-3xl text-white">Portrait. Event. Atmosphere.</p>
+                </div>
+                <div class="grid gap-4 border-t border-white/10 pt-5 sm:grid-cols-3 lg:grid-cols-1">
+                  <div>
+                    <p class="text-[0.68rem] uppercase tracking-[0.28em] text-white/45">Based In</p>
+                    <p class="mt-2 text-sm text-white/75">Dumaguete City, Philippines</p>
+                  </div>
+                  <div>
+                    <p class="text-[0.68rem] uppercase tracking-[0.28em] text-white/45">Projects</p>
+                    <p class="mt-2 text-sm text-white/75">Brand campaigns, editorials, exhibitions</p>
+                  </div>
+                  <div>
+                    <p class="text-[0.68rem] uppercase tracking-[0.28em] text-white/45">Approach</p>
+                    <p class="mt-2 text-sm text-white/75">Slow, cinematic, deeply human storytelling</p>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+        <a href="#about" class="scroll-indicator absolute bottom-8 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-3 text-[0.65rem] font-semibold uppercase tracking-[0.45em] text-white/60 md:flex">
+          <span>Scroll</span>
+          <span class="scroll-indicator__line"></span>
+        </a>
+      </section>
+
+      <!-- About Me Section -->
+      <section id="about" class="relative isolate overflow-hidden px-4 py-20 sm:px-6 lg:px-10 lg:py-28">
+        <div class="absolute inset-x-0 top-0 h-48 bg-[radial-gradient(circle_at_top,rgba(210,194,164,0.14),transparent_60%)]"></div>
+        <div class="mx-auto grid max-w-[1440px] gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+          <div class="relative" data-aos="fade-right" data-aos-duration="1100">
+            <div class="absolute -left-4 top-8 hidden h-52 w-52 rounded-full bg-sand/10 blur-3xl lg:block"></div>
+            <div class="relative overflow-hidden rounded-[2.5rem] border border-white/10 bg-white/5 shadow-soft">
+              <img class="has-parallax h-[32rem] w-full object-cover sm:h-[40rem]" src="./img/hero.jpg" alt="Portrait of photographer Jzanaia Sybil Valiao Portal" loading="lazy" data-parallax="0.08">
+            </div>
+            <div class="absolute -bottom-6 right-6 max-w-[260px] rounded-[2rem] border border-white/10 bg-black/65 p-5 backdrop-blur-2xl">
+              <p class="text-[0.68rem] uppercase tracking-[0.3em] text-sand/70">Signature Style</p>
+              <p class="mt-3 text-sm leading-7 text-white/75">Soft contrast, dramatic framing, and images that feel intimate even at grand scale.</p>
+            </div>
+          </div>
+
+          <div class="lg:pl-8">
+            <p class="section-kicker" data-aos="fade-up">About Me</p>
+            <h2 class="section-title max-w-4xl" data-aos="fade-up" data-aos-delay="100">ABOUT ME</h2>
+            <div class="mt-8 max-w-2xl space-y-6 text-base leading-8 text-white/68 sm:text-lg" data-aos="fade-up" data-aos-delay="180">
+              <p>
+                I am Jzanaia Sybil Valiao Portal, a photographer and digital artist drawn to the tension between elegance and raw emotion. My work is built around how light sculpts memory, how silence sharpens feeling, and how composition can turn fleeting scenes into something timeless.
+              </p>
+              <p>
+                From editorial portraits to event photography and immersive digital art, every frame is crafted with a luxury sensibility: restrained, atmospheric, and deeply intentional.
+              </p>
+            </div>
+
+            <div class="mt-10 grid gap-6 border-t border-white/10 pt-8 sm:grid-cols-2" data-aos="fade-up" data-aos-delay="260">
+              <div>
+                <p class="text-[0.7rem] uppercase tracking-[0.32em] text-white/45">Current Focus</p>
+                <p class="mt-3 text-lg text-white/80">Premium portrait commissions, event coverage, and atmospheric storytelling.</p>
+              </div>
+              <div>
+                <p class="text-[0.7rem] uppercase tracking-[0.32em] text-white/45">Availability</p>
+                <p class="mt-3 text-lg text-white/80">Open for select bookings, brand partnerships, and digital art features.</p>
+              </div>
+            </div>
+
+            <div class="mt-10 flex flex-wrap items-center gap-5" data-aos="fade-up" data-aos-delay="320">
+              <a href="https://www.instagram.com/jzan_aya/" target="_blank" rel="noreferrer" class="social-chip">
+                <i class="ri-instagram-line text-lg"></i>
+                Instagram
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=100083395296400" target="_blank" rel="noreferrer" class="social-chip">
+                <i class="ri-facebook-line text-lg"></i>
+                Facebook
+              </a>
+            </div>
+
+            <div class="signature-mark mt-12" data-aos="fade-up" data-aos-delay="380">
+              <span class="block">Jzanaia Sybil</span>
+              <span class="block">Valiao Portal</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="px-4 py-20 sm:px-6 lg:px-10 lg:py-28">
+        <div class="mx-auto max-w-[1440px]">
+          <div class="grid gap-8 lg:grid-cols-[420px_minmax(0,1fr)] lg:gap-12">
+            <div class="lg:sticky lg:top-28 lg:self-start">
+              <p class="section-kicker" data-aos="fade-up">Experience</p>
+              <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">EXPERIENCE</h2>
+              <p class="mt-8 max-w-md text-base leading-8 text-white/65" data-aos="fade-up" data-aos-delay="180">
+                A growing body of work shaped by independent practice, collaborative art direction, and public presentation.
+              </p>
+            </div>
+
+            <div class="timeline" id="experience-timeline">
+              <article class="timeline-item" data-aos="fade-left" data-aos-duration="900">
+                <div class="timeline-card">
+                  <p class="timeline-year">2024</p>
+                  <h3 class="timeline-role">Freelance Photographer</h3>
+                  <p class="timeline-description">Created editorial portrait campaigns and luxury lifestyle visuals for independent brands, designers, and private commissions.</p>
+                </div>
+              </article>
+
+              <article class="timeline-item" data-aos="fade-right" data-aos-duration="900">
+                <div class="timeline-card">
+                  <p class="timeline-year">2023</p>
+                  <h3 class="timeline-role">Digital Artist Collaboration</h3>
+                  <p class="timeline-description">Partnered with visual storytellers on mixed-media collections that blended still photography, texture studies, and digital painting.</p>
+                </div>
+              </article>
+
+              <article class="timeline-item" data-aos="fade-left" data-aos-duration="900">
+                <div class="timeline-card">
+                  <p class="timeline-year">2022</p>
+                  <h3 class="timeline-role">Photography Exhibition</h3>
+                  <p class="timeline-description">Presented a cinematic portrait series focused on intimacy, architecture, and the emotional weight of negative space.</p>
+                </div>
+              </article>
+
+              <article class="timeline-item" data-aos="fade-right" data-aos-duration="900">
+                <div class="timeline-card">
+                  <p class="timeline-year">2021</p>
+                  <h3 class="timeline-role">Creative Direction Residency</h3>
+                  <p class="timeline-description">Refined a brand-led image language for fashion and travel storytelling, with emphasis on movement, texture, and tone.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Digital Art Gallery -->
+      <section id="digital-art" class="px-4 py-20 sm:px-6 lg:px-10 lg:py-28 overflow-hidden">
+        <div class="mx-auto max-w-[1440px]">
+          <div class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p class="section-kicker" data-aos="fade-up">Digital Art</p>
+              <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">DIGITAL ART</h2>
+            </div>
+            <p class="max-w-xl text-base leading-8 text-white/60" data-aos="fade-up" data-aos-delay="180">
+              A curated selection of dreamlike studies, textural collages, and visual experiments built to sit between photography and painting.
+            </p>
+          </div>
+
+          <div class="slider-container mt-12" data-aos="fade-up">
+            <div class="slider-track" id="digital-art-slider">
+              <div class="slider-item"><img src="./img/d1.jpg" alt="Digital Art 1" loading="lazy"></div>
+              <div class="slider-item"><img src="./img/d2.jpg" alt="Digital Art 2" loading="lazy"></div>
+              <div class="slider-item"><img src="./img/d3.jpg" alt="Digital Art 3" loading="lazy"></div>
+              <div class="slider-item"><img src="./img/d4.jpg" alt="Digital Art 4" loading="lazy"></div>
+              <div class="slider-item"><img src="./img/d5.jpg" alt="Digital Art 5" loading="lazy"></div>
+              <div class="slider-item"><img src="./img/d6.jpg" alt="Digital Art 6" loading="lazy"></div>
+              <div class="slider-item"><img src="./img/d7.jpg" alt="Digital Art 7" loading="lazy"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- My Works Gallery -->
+      <section id="photography" class="px-4 py-20 sm:px-6 lg:px-10 lg:py-28 overflow-hidden">
+        <div class="mx-auto max-w-[1440px]">
+          <div class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p class="section-kicker" data-aos="fade-up">My Works</p>
+              <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">MY WORKS</h2>
+            </div>
+            <p class="max-w-xl text-base leading-8 text-white/60" data-aos="fade-up" data-aos-delay="180">
+              A collection of photography works capturing moments, emotions, and stories through the lens.
+            </p>
+          </div>
+
+          <div class="slider-container mt-12" data-aos="fade-up">
+            <div class="slider-track slider-reverse" id="works-slider">
+              <div class="slider-item"><img src="./img/1.jpg" alt="Work 1" loading="lazy"></div>
+              <div class="slider-item"><img src="./img/2.jpg" alt="Work 2" loading="lazy"></div>
+              <div class="slider-item"><img src="./img/3.jpg" alt="Work 3" loading="lazy"></div>
+              <div class="slider-item"><img src="./img/4.jpg" alt="Work 4" loading="lazy"></div>
+              <div class="slider-item"><img src="./img/5.jpg" alt="Work 5" loading="lazy"></div>
+              <div class="slider-item"><img src="./img/6.jpg" alt="Work 6" loading="lazy"></div>
+              <div class="slider-item"><img src="./img/7.jpg" alt="Work 7" loading="lazy"></div>
+              <div class="slider-item"><img src="./img/8.jpg" alt="Work 8" loading="lazy"></div>
+              <div class="slider-item"><img src="./img/9.jpg" alt="Work 9" loading="lazy"></div>
+              <div class="slider-item"><img src="./img/10.jpg" alt="Work 10" loading="lazy"></div>
+              <div class="slider-item"><img src="./img/11.jpg" alt="Work 11" loading="lazy"></div>
+              <div class="slider-item"><img src="./img/12.jpg" alt="Work 12" loading="lazy"></div>
+              <div class="slider-item"><img src="./img/13.jpg" alt="Work 13" loading="lazy"></div>
+              <div class="slider-item"><img src="./img/14.jpg" alt="Work 14" loading="lazy"></div>
+              <div class="slider-item"><img src="./img/15.jpg" alt="Work 15" loading="lazy"></div>
+              <div class="slider-item"><img src="./img/16.jpg" alt="Work 16" loading="lazy"></div>
+              <div class="slider-item"><img src="./img/17.jpg" alt="Work 17" loading="lazy"></div>
+              <div class="slider-item"><img src="./img/18.jpg" alt="Work 18" loading="lazy"></div>
+              <div class="slider-item"><img src="./img/19.jpg" alt="Work 19" loading="lazy"></div>
+              <div class="slider-item"><img src="./img/20.jpg" alt="Work 20" loading="lazy"></div>
+              <div class="slider-item"><img src="./img/21.jpg" alt="Work 21" loading="lazy"></div>
+              <div class="slider-item"><img src="./img/22.jpg" alt="Work 22" loading="lazy"></div>
+              <div class="slider-item"><img src="./img/23.jpg" alt="Work 23" loading="lazy"></div>
+              <div class="slider-item"><img src="./img/24.jpg" alt="Work 24" loading="lazy"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reviews Section -->
+      <section id="reviews" class="px-4 py-20 sm:px-6 lg:px-10 lg:py-28">
+        <div class="mx-auto max-w-[1440px]">
+          <div class="text-center">
+            <p class="section-kicker" data-aos="fade-up">Reviews</p>
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">CLIENT TESTIMONIALS</h2>
+            <p class="mx-auto mt-8 max-w-2xl text-base leading-8 text-white/60" data-aos="fade-up" data-aos-delay="180">
+              What clients say about working with me
+            </p>
+          </div>
+
+          <div id="reviews-grid" class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <!-- Reviews will be loaded here -->
+          </div>
+
+          <div class="mt-12 rounded-[2.5rem] border border-white/10 bg-white/5 p-8 backdrop-blur-xl sm:p-10" data-aos="fade-up">
+            <h3 class="font-display text-2xl text-white">Leave a Review</h3>
+            <form id="review-form" class="mt-6 space-y-5">
+              <div>
+                <label for="review-name" class="mb-2 block text-sm font-semibold uppercase tracking-[0.2em] text-white/45">Name</label>
+                <input id="review-name" type="text" placeholder="Your name" class="contact-input" required>
+              </div>
+              <div>
+                <label for="review-rating" class="mb-2 block text-sm font-semibold uppercase tracking-[0.2em] text-white/45">Rating</label>
+                <div class="flex gap-2">
+                  <button type="button" class="star-btn" data-rating="1"><i class="ri-star-line text-2xl"></i></button>
+                  <button type="button" class="star-btn" data-rating="2"><i class="ri-star-line text-2xl"></i></button>
+                  <button type="button" class="star-btn" data-rating="3"><i class="ri-star-line text-2xl"></i></button>
+                  <button type="button" class="star-btn" data-rating="4"><i class="ri-star-line text-2xl"></i></button>
+                  <button type="button" class="star-btn" data-rating="5"><i class="ri-star-line text-2xl"></i></button>
+                </div>
+                <input id="review-rating" type="hidden" value="5" required>
+              </div>
+              <div>
+                <label for="review-message" class="mb-2 block text-sm font-semibold uppercase tracking-[0.2em] text-white/45">Review</label>
+                <textarea id="review-message" rows="4" placeholder="Share your experience" class="contact-input resize-none" required></textarea>
+              </div>
+              <button type="submit" class="inline-flex items-center justify-center gap-2 rounded-full border border-sand/70 bg-sand px-7 py-4 text-xs font-bold uppercase tracking-[0.32em] text-black transition hover:scale-[1.02] hover:bg-white">
+                Submit Review
+                <i class="ri-send-plane-line text-base"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="px-4 py-20 sm:px-6 lg:px-10 lg:py-28">
+        <div class="mx-auto grid max-w-[1440px] gap-10 lg:grid-cols-[0.95fr_1.05fr]">
+          <div class="rounded-[2.5rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.06),rgba(255,255,255,0.02))] p-8 shadow-soft sm:p-10" data-aos="fade-right">
+            <p class="section-kicker">Contact</p>
+            <h2 class="section-title mt-3">LET'S CREATE</h2>
+            <p class="mt-8 max-w-xl text-base leading-8 text-white/65">
+              I take on a small number of commissions each season to keep every collaboration intimate, precise, and fully tailored.
+            </p>
+
+            <div class="mt-10 space-y-6 border-t border-white/10 pt-8">
+              <div>
+                <p class="text-[0.68rem] uppercase tracking-[0.3em] text-white/40">Email</p>
+                <a href="mailto:hello@jzanaia.com" class="mt-3 inline-block font-display text-3xl text-white transition hover:text-sand">hello@jzanaia.com</a>
+              </div>
+              <div>
+                <p class="text-[0.68rem] uppercase tracking-[0.3em] text-white/40">Follow</p>
+                <div class="mt-4 flex flex-wrap gap-4">
+                  <a href="https://www.instagram.com/jzan_aya/" target="_blank" rel="noreferrer" class="contact-link">Instagram</a>
+                  <a href="https://www.facebook.com/profile.php?id=100083395296400" target="_blank" rel="noreferrer" class="contact-link">Facebook</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-[2.5rem] border border-white/10 bg-black/45 p-8 backdrop-blur-2xl sm:p-10" data-aos="fade-left">
+            <form id="contact-form" class="space-y-6">
+              <div>
+                <label for="name" class="mb-3 block text-[0.72rem] font-semibold uppercase tracking-[0.3em] text-white/45">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" class="contact-input" required>
+              </div>
+              <div>
+                <label for="email" class="mb-3 block text-[0.72rem] font-semibold uppercase tracking-[0.3em] text-white/45">Email</label>
+                <input id="email" name="email" type="email" placeholder="Your email" class="contact-input" required>
+              </div>
+              <div>
+                <label for="message" class="mb-3 block text-[0.72rem] font-semibold uppercase tracking-[0.3em] text-white/45">Message</label>
+                <textarea id="message" name="message" rows="6" placeholder="Tell me about your project" class="contact-input resize-none" required></textarea>
+              </div>
+
+              <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                <button type="submit" class="inline-flex items-center justify-center rounded-full border border-sand/70 bg-sand px-7 py-4 text-xs font-bold uppercase tracking-[0.32em] text-black transition duration-300 hover:scale-[1.02] hover:bg-white">
+                  Send Inquiry
+                </button>
+                <p id="form-status" class="text-sm leading-7 text-white/50" aria-live="polite"></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="px-4 pb-8 pt-4 sm:px-6 lg:px-10">
+      <div class="mx-auto max-w-[1440px] border-t border-white/10 pt-8">
+        <div class="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p class="text-sm uppercase tracking-[0.22em] text-white/45">Jzanaia Sybil Valiao Portal</p>
+            <p class="mt-2 text-sm text-white/55">Luxury photography portfolio crafted for elegant visual storytelling.</p>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-4 text-sm text-white/55">
+            <a href="https://www.instagram.com/jzan_aya/" target="_blank" rel="noreferrer" class="transition hover:text-white">Instagram</a>
+            <a href="https://www.facebook.com/profile.php?id=100083395296400" target="_blank" rel="noreferrer" class="transition hover:text-white">Facebook</a>
+          </div>
+
+          <button id="back-to-top-footer" type="button" class="inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/5 px-5 py-3 text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-white/75 backdrop-blur-xl transition hover:border-white/35 hover:bg-white/10 hover:text-white">
+            Back to Top
+            <i class="ri-arrow-up-line text-base"></i>
+          </button>
+        </div>
+
+        <p class="mt-8 text-xs uppercase tracking-[0.2em] text-white/30">© 2026 Jzanaia Sybil Valiao Portal. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <button id="back-to-top-floating" type="button" class="back-to-top" aria-label="Back to top">
+      <i class="ri-arrow-up-line"></i>
+    </button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>

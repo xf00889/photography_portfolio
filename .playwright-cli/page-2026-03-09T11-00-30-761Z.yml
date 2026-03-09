@@ -1,0 +1,295 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "J Jzanaia Sybil Valiao Portal" [ref=e5] [cursor=pointer]:
+        - /url: "#home"
+        - generic [ref=e6]: J
+        - generic [ref=e7]:
+          - generic [ref=e8]: Jzanaia Sybil
+          - generic [ref=e9]: Valiao Portal
+      - navigation [ref=e10]:
+        - link "Home" [ref=e11] [cursor=pointer]:
+          - /url: "#home"
+        - link "About" [ref=e12] [cursor=pointer]:
+          - /url: "#about"
+        - link "Experience" [ref=e13] [cursor=pointer]:
+          - /url: "#experience"
+        - link "Digital Art" [ref=e14] [cursor=pointer]:
+          - /url: "#digital-art"
+        - link "Photography" [ref=e15] [cursor=pointer]:
+          - /url: "#photography"
+        - link "Contact" [ref=e16] [cursor=pointer]:
+          - /url: "#contact"
+      - text: 
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - generic [ref=e20]:
+        - group "1 / 3" [ref=e21]:
+          - img "Luxury editorial portrait" [ref=e23]
+        - group "2 / 3":
+          - generic:
+            - img "Cinematic landscape photography"
+        - group "3 / 3":
+          - generic:
+            - img "Street photography at dusk"
+      - generic [ref=e27]:
+        - generic [ref=e28]:
+          - paragraph [ref=e29]: Luxury Photography Portfolio
+          - heading "Capturing Moments Through Light" [level=1] [ref=e30]:
+            - generic [ref=e31]: Capturing
+            - generic [ref=e32]: Moments
+            - generic [ref=e33]: Through Light
+          - paragraph [ref=e34]: Editorial portraiture, quiet travel stories, and digital compositions shaped with shadow, atmosphere, and refined detail.
+          - generic [ref=e35]:
+            - link "View My Work " [ref=e36] [cursor=pointer]:
+              - /url: "#photography"
+              - text: View My Work
+              - generic [ref=e37]: 
+            - link "Explore the Story" [ref=e38] [cursor=pointer]:
+              - /url: "#about"
+        - complementary [ref=e39]:
+          - generic [ref=e40]:
+            - generic [ref=e41]:
+              - paragraph [ref=e42]: Selected Focus
+              - paragraph [ref=e43]: Portrait. Travel. Atmosphere.
+            - generic [ref=e44]:
+              - generic [ref=e45]:
+                - paragraph [ref=e46]: Based In
+                - paragraph [ref=e47]: Manila / Available Worldwide
+              - generic [ref=e48]:
+                - paragraph [ref=e49]: Projects
+                - paragraph [ref=e50]: Brand campaigns, editorials, exhibitions
+              - generic [ref=e51]:
+                - paragraph [ref=e52]: Approach
+                - paragraph [ref=e53]: Slow, cinematic, deeply human storytelling
+      - link "Scroll" [ref=e54] [cursor=pointer]:
+        - /url: "#about"
+        - generic [ref=e55]: Scroll
+    - generic [ref=e59]:
+      - generic [ref=e60]:
+        - img "Portrait of photographer Jzanaia Sybil Valiao Portal" [ref=e63]
+        - generic [ref=e64]:
+          - paragraph [ref=e65]: Signature Style
+          - paragraph [ref=e66]: Soft contrast, dramatic framing, and images that feel intimate even at grand scale.
+      - generic [ref=e67]:
+        - paragraph [ref=e68]: About Me
+        - heading "ABOUT ME" [level=2] [ref=e69]
+        - generic [ref=e70]:
+          - paragraph [ref=e71]: I am Jzanaia Sybil Valiao Portal, a photographer and digital artist drawn to the tension between elegance and raw emotion. My work is built around how light sculpts memory, how silence sharpens feeling, and how composition can turn fleeting scenes into something timeless.
+          - paragraph [ref=e72]: "From editorial portraits to travel narratives and immersive digital art, every frame is crafted with a luxury sensibility: restrained, atmospheric, and deeply intentional."
+        - generic [ref=e73]:
+          - generic [ref=e74]:
+            - paragraph [ref=e75]: Current Focus
+            - paragraph [ref=e76]: Premium portrait commissions, gallery collaborations, and destination storytelling.
+          - generic [ref=e77]:
+            - paragraph [ref=e78]: Availability
+            - paragraph [ref=e79]: Open for select bookings, brand partnerships, and digital art features.
+        - generic [ref=e80]:
+          - link " Instagram" [ref=e81] [cursor=pointer]:
+            - /url: https://instagram.com
+            - generic [ref=e82]: 
+            - text: Instagram
+          - link " Behance" [ref=e83] [cursor=pointer]:
+            - /url: https://behance.net
+            - generic [ref=e84]: 
+            - text: Behance
+          - link " Dribbble" [ref=e85] [cursor=pointer]:
+            - /url: https://dribbble.com
+            - generic [ref=e86]: 
+            - text: Dribbble
+        - generic [ref=e87]:
+          - generic [ref=e88]: Jzanaia Sybil
+          - generic [ref=e89]: Valiao Portal
+    - generic [ref=e92]:
+      - generic [ref=e93]:
+        - paragraph [ref=e94]: Experience
+        - heading "EXPERIENCE" [level=2] [ref=e95]
+        - paragraph [ref=e96]: A growing body of work shaped by independent practice, collaborative art direction, and public presentation.
+      - generic [ref=e97]:
+        - article [ref=e98]:
+          - generic [ref=e99]:
+            - paragraph [ref=e100]: "2024"
+            - heading "Freelance Photographer" [level=3] [ref=e101]
+            - paragraph [ref=e102]: Created editorial portrait campaigns and luxury lifestyle visuals for independent brands, designers, and private commissions.
+        - article [ref=e103]:
+          - generic [ref=e104]:
+            - paragraph [ref=e105]: "2023"
+            - heading "Digital Artist Collaboration" [level=3] [ref=e106]
+            - paragraph [ref=e107]: Partnered with visual storytellers on mixed-media collections that blended still photography, texture studies, and digital painting.
+        - article [ref=e108]:
+          - generic [ref=e109]:
+            - paragraph [ref=e110]: "2022"
+            - heading "Photography Exhibition" [level=3] [ref=e111]
+            - paragraph [ref=e112]: Presented a cinematic portrait series focused on intimacy, architecture, and the emotional weight of negative space.
+        - article [ref=e113]:
+          - generic [ref=e114]:
+            - paragraph [ref=e115]: "2021"
+            - heading "Creative Direction Residency" [level=3] [ref=e116]
+            - paragraph [ref=e117]: Refined a brand-led image language for fashion and travel storytelling, with emphasis on movement, texture, and tone.
+    - generic [ref=e119]:
+      - generic [ref=e120]:
+        - generic [ref=e121]:
+          - paragraph [ref=e122]: Digital Art
+          - heading "DIGITAL ART" [level=2] [ref=e123]
+        - paragraph [ref=e124]: A curated selection of dreamlike studies, textural collages, and visual experiments built to sit between photography and painting.
+      - generic [ref=e125]:
+        - link "Digital art composition in monochrome Velvet Silence Mixed Media Study" [ref=e126] [cursor=pointer]:
+          - /url: https://picsum.photos/seed/jzanaia-art-1/1600/2000
+          - img "Digital art composition in monochrome"
+          - generic [ref=e127]:
+            - strong [ref=e128]: Velvet Silence
+            - text: Mixed Media Study
+        - link "Abstract digital portrait artwork Afterglow Portrait Fragment" [ref=e129] [cursor=pointer]:
+          - /url: https://picsum.photos/seed/jzanaia-art-2/1600/1800
+          - img "Abstract digital portrait artwork"
+          - generic [ref=e130]:
+            - strong [ref=e131]: Afterglow
+            - text: Portrait Fragment
+        - link "Cinematic digital collage artwork Nocturne Layered Collage" [ref=e132] [cursor=pointer]:
+          - /url: https://picsum.photos/seed/jzanaia-art-3/1600/2200
+          - img "Cinematic digital collage artwork"
+          - generic [ref=e133]:
+            - strong [ref=e134]: Nocturne
+            - text: Layered Collage
+        - link "Luxury-inspired conceptual digital piece Static Bloom Texture Sequence" [ref=e135] [cursor=pointer]:
+          - /url: https://picsum.photos/seed/jzanaia-art-4/1600/1750
+          - img "Luxury-inspired conceptual digital piece"
+          - generic [ref=e136]:
+            - strong [ref=e137]: Static Bloom
+            - text: Texture Sequence
+        - link "Soft contrast digital artwork Pale Echo Light Sculpture" [ref=e138] [cursor=pointer]:
+          - /url: https://picsum.photos/seed/jzanaia-art-5/1600/2100
+          - img "Soft contrast digital artwork"
+          - generic [ref=e139]:
+            - strong [ref=e140]: Pale Echo
+            - text: Light Sculpture
+        - link "Editorial-inspired digital art image Threshold Editorial Motion" [ref=e141] [cursor=pointer]:
+          - /url: https://picsum.photos/seed/jzanaia-art-6/1600/1900
+          - img "Editorial-inspired digital art image"
+          - generic [ref=e142]:
+            - strong [ref=e143]: Threshold
+            - text: Editorial Motion
+        - link "Dreamlike visual art panel Low Tide Dream Sequence" [ref=e144] [cursor=pointer]:
+          - /url: https://picsum.photos/seed/jzanaia-art-7/1600/2150
+          - img "Dreamlike visual art panel"
+          - generic [ref=e145]:
+            - strong [ref=e146]: Low Tide
+            - text: Dream Sequence
+        - link "Monochrome experimental digital artwork Contour Monochrome Study" [ref=e147] [cursor=pointer]:
+          - /url: https://picsum.photos/seed/jzanaia-art-8/1600/1850
+          - img "Monochrome experimental digital artwork"
+          - generic [ref=e148]:
+            - strong [ref=e149]: Contour
+            - text: Monochrome Study
+    - generic [ref=e151]:
+      - generic [ref=e152]:
+        - generic [ref=e153]:
+          - paragraph [ref=e154]: Photography
+          - heading "PHOTOGRAPHY" [level=2] [ref=e155]
+        - generic [ref=e156]:
+          - button "All" [ref=e157] [cursor=pointer]
+          - button "Portrait" [ref=e158] [cursor=pointer]
+          - button "Landscape" [ref=e159] [cursor=pointer]
+          - button "Street" [ref=e160] [cursor=pointer]
+          - button "Travel" [ref=e161] [cursor=pointer]
+      - generic [ref=e162]:
+        - link "Portrait photography close-up Portrait Velvet Light" [ref=e163] [cursor=pointer]:
+          - /url: https://picsum.photos/seed/jzanaia-photo-1/1800/2200
+          - img "Portrait photography close-up" [ref=e164]
+          - generic [ref=e166]:
+            - generic [ref=e167]: Portrait
+            - text: Velvet Light
+        - link "Landscape photography horizon Landscape Silent Horizon" [ref=e168] [cursor=pointer]:
+          - /url: https://picsum.photos/seed/jzanaia-photo-2/1800/2200
+          - img "Landscape photography horizon" [ref=e169]
+          - generic [ref=e171]:
+            - generic [ref=e172]: Landscape
+            - text: Silent Horizon
+        - link "Street photography in cinematic lighting Street Midnight Passage" [ref=e173] [cursor=pointer]:
+          - /url: https://picsum.photos/seed/jzanaia-photo-3/1800/2200
+          - img "Street photography in cinematic lighting" [ref=e174]
+          - generic [ref=e176]:
+            - generic [ref=e177]: Street
+            - text: Midnight Passage
+        - link "Travel photography with warm light Travel Distant Gold" [ref=e178] [cursor=pointer]:
+          - /url: https://picsum.photos/seed/jzanaia-photo-4/1800/2200
+          - img "Travel photography with warm light" [ref=e179]
+          - generic [ref=e181]:
+            - generic [ref=e182]: Travel
+            - text: Distant Gold
+        - link "Editorial portrait photography Portrait Quiet Gaze" [ref=e183] [cursor=pointer]:
+          - /url: https://picsum.photos/seed/jzanaia-photo-5/1800/2200
+          - img "Editorial portrait photography" [ref=e184]
+          - generic [ref=e186]:
+            - generic [ref=e187]: Portrait
+            - text: Quiet Gaze
+        - link "Landscape photography with mountains Landscape Mist Frame" [ref=e188] [cursor=pointer]:
+          - /url: https://picsum.photos/seed/jzanaia-photo-6/1800/2200
+          - img "Landscape photography with mountains" [ref=e189]
+          - generic [ref=e191]:
+            - generic [ref=e192]: Landscape
+            - text: Mist Frame
+        - link "Street photograph in urban setting Street Neon Quiet" [ref=e193] [cursor=pointer]:
+          - /url: https://picsum.photos/seed/jzanaia-photo-7/1800/2200
+          - img "Street photograph in urban setting" [ref=e194]
+          - generic [ref=e196]:
+            - generic [ref=e197]: Street
+            - text: Neon Quiet
+        - link "Travel image with architecture Travel Open Passage" [ref=e198] [cursor=pointer]:
+          - /url: https://picsum.photos/seed/jzanaia-photo-8/1800/2200
+          - img "Travel image with architecture" [ref=e199]
+          - generic [ref=e201]:
+            - generic [ref=e202]: Travel
+            - text: Open Passage
+    - generic [ref=e204]:
+      - generic [ref=e205]:
+        - paragraph [ref=e206]: Contact
+        - heading "LET'S CREATE" [level=2] [ref=e207]
+        - paragraph [ref=e208]: I take on a small number of commissions each season to keep every collaboration intimate, precise, and fully tailored.
+        - generic [ref=e209]:
+          - generic [ref=e210]:
+            - paragraph [ref=e211]: Email
+            - link "hello@jzanaia.com" [ref=e212] [cursor=pointer]:
+              - /url: mailto:hello@jzanaia.com
+          - generic [ref=e213]:
+            - paragraph [ref=e214]: Follow
+            - generic [ref=e215]:
+              - link "Instagram" [ref=e216] [cursor=pointer]:
+                - /url: https://instagram.com
+              - link "Behance" [ref=e217] [cursor=pointer]:
+                - /url: https://behance.net
+              - link "Pinterest" [ref=e218] [cursor=pointer]:
+                - /url: https://pinterest.com
+      - generic [ref=e220]:
+        - generic [ref=e221]:
+          - generic [ref=e222]: Name
+          - textbox "Name" [ref=e223]:
+            - /placeholder: Your name
+        - generic [ref=e224]:
+          - generic [ref=e225]: Email
+          - textbox "Email" [ref=e226]:
+            - /placeholder: Your email
+        - generic [ref=e227]:
+          - generic [ref=e228]: Message
+          - textbox "Message" [ref=e229]:
+            - /placeholder: Tell me about your project
+        - generic [ref=e230]:
+          - button "Send Inquiry" [ref=e231] [cursor=pointer]
+          - paragraph
+  - contentinfo [ref=e232]:
+    - generic [ref=e233]:
+      - generic [ref=e234]:
+        - generic [ref=e235]:
+          - paragraph [ref=e236]: Jzanaia Sybil Valiao Portal
+          - paragraph [ref=e237]: Luxury photography portfolio crafted for elegant visual storytelling.
+        - generic [ref=e238]:
+          - link "Instagram" [ref=e239] [cursor=pointer]:
+            - /url: https://instagram.com
+          - link "Behance" [ref=e240] [cursor=pointer]:
+            - /url: https://behance.net
+          - link "Dribbble" [ref=e241] [cursor=pointer]:
+            - /url: https://dribbble.com
+        - button "Back to Top " [ref=e242] [cursor=pointer]:
+          - text: Back to Top
+          - generic [ref=e243]: 
+      - paragraph [ref=e244]: © 2026 Jzanaia Sybil Valiao Portal. All rights reserved.

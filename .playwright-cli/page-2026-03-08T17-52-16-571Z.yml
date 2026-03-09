@@ -1,0 +1,289 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "J J. Zanaia" [ref=e5] [cursor=pointer]:
+        - /url: "#home"
+        - generic [ref=e6]: J
+        - generic [ref=e7]: J. Zanaia
+      - button "Open navigation" [ref=e239] [cursor=pointer]:
+        - generic [ref=e240]: 
+    - generic:
+      - navigation:
+        - link "Home":
+          - /url: "#home"
+        - link "About":
+          - /url: "#about"
+        - link "Experience":
+          - /url: "#experience"
+        - link "Digital Art":
+          - /url: "#digital-art"
+        - link "Photography":
+          - /url: "#photography"
+        - link "Contact":
+          - /url: "#contact"
+  - main [ref=e15]:
+    - generic [ref=e16]:
+      - generic [ref=e18]:
+        - group "2 / 3":
+          - generic:
+            - img "Cinematic landscape photography"
+        - group "3 / 3":
+          - generic:
+            - img "Street photography at dusk"
+        - group "1 / 3" [ref=e19]:
+          - img "Luxury editorial portrait" [ref=e21]
+      - generic [ref=e25]:
+        - generic [ref=e26]:
+          - paragraph [ref=e27]: Luxury Photography Portfolio
+          - heading "Capturing Moments Through Light" [level=1] [ref=e28]:
+            - text: Capturing Moments
+            - generic [ref=e29]: Through Light
+          - paragraph [ref=e30]: Editorial portraiture, quiet travel stories, and digital compositions shaped with shadow, atmosphere, and refined detail.
+          - generic [ref=e31]:
+            - link "View My Work " [ref=e32] [cursor=pointer]:
+              - /url: "#photography"
+              - text: View My Work
+              - generic [ref=e33]: 
+            - link "Explore the Story" [ref=e34] [cursor=pointer]:
+              - /url: "#about"
+        - complementary [ref=e35]:
+          - generic [ref=e36]:
+            - generic [ref=e37]:
+              - paragraph [ref=e38]: Selected Focus
+              - paragraph [ref=e39]: Portrait. Travel. Atmosphere.
+            - generic [ref=e40]:
+              - generic [ref=e41]:
+                - paragraph [ref=e42]: Based In
+                - paragraph [ref=e43]: Manila / Available Worldwide
+              - generic [ref=e44]:
+                - paragraph [ref=e45]: Projects
+                - paragraph [ref=e46]: Brand campaigns, editorials, exhibitions
+              - generic [ref=e47]:
+                - paragraph [ref=e48]: Approach
+                - paragraph [ref=e49]: Slow, cinematic, deeply human storytelling
+    - generic [ref=e55]:
+      - generic [ref=e56]:
+        - img "Portrait of photographer J. Zanaia" [ref=e59]
+        - generic [ref=e60]:
+          - paragraph [ref=e61]: Signature Style
+          - paragraph [ref=e62]: Soft contrast, dramatic framing, and images that feel intimate even at grand scale.
+      - generic [ref=e63]:
+        - paragraph [ref=e64]: About Me
+        - heading "ABOUT ME" [level=2] [ref=e65]
+        - generic [ref=e66]:
+          - paragraph [ref=e67]: I am J. Zanaia, a photographer and digital artist drawn to the tension between elegance and raw emotion. My work is built around how light sculpts memory, how silence sharpens feeling, and how composition can turn fleeting scenes into something timeless.
+          - paragraph [ref=e68]: "From editorial portraits to travel narratives and immersive digital art, every frame is crafted with a luxury sensibility: restrained, atmospheric, and deeply intentional."
+        - generic [ref=e69]:
+          - generic [ref=e70]:
+            - paragraph [ref=e71]: Current Focus
+            - paragraph [ref=e72]: Premium portrait commissions, gallery collaborations, and destination storytelling.
+          - generic [ref=e73]:
+            - paragraph [ref=e74]: Availability
+            - paragraph [ref=e75]: Open for select bookings, brand partnerships, and digital art features.
+        - generic [ref=e76]:
+          - link " Instagram" [ref=e77] [cursor=pointer]:
+            - /url: https://instagram.com
+            - generic [ref=e78]: 
+            - text: Instagram
+          - link " Behance" [ref=e79] [cursor=pointer]:
+            - /url: https://behance.net
+            - generic [ref=e80]: 
+            - text: Behance
+          - link " Dribbble" [ref=e81] [cursor=pointer]:
+            - /url: https://dribbble.com
+            - generic [ref=e82]: 
+            - text: Dribbble
+        - generic [ref=e83]: J. Zanaia
+    - generic [ref=e86]:
+      - generic [ref=e87]:
+        - paragraph [ref=e88]: Experience
+        - heading "EXPERIENCE" [level=2] [ref=e89]
+        - paragraph [ref=e90]: A growing body of work shaped by independent practice, collaborative art direction, and public presentation.
+      - generic [ref=e91]:
+        - article [ref=e92]:
+          - generic [ref=e93]:
+            - paragraph [ref=e94]: "2024"
+            - heading "Freelance Photographer" [level=3] [ref=e95]
+            - paragraph [ref=e96]: Created editorial portrait campaigns and luxury lifestyle visuals for independent brands, designers, and private commissions.
+        - article [ref=e97]:
+          - generic [ref=e98]:
+            - paragraph [ref=e99]: "2023"
+            - heading "Digital Artist Collaboration" [level=3] [ref=e100]
+            - paragraph [ref=e101]: Partnered with visual storytellers on mixed-media collections that blended still photography, texture studies, and digital painting.
+        - article [ref=e102]:
+          - generic [ref=e103]:
+            - paragraph [ref=e104]: "2022"
+            - heading "Photography Exhibition" [level=3] [ref=e105]
+            - paragraph [ref=e106]: Presented a cinematic portrait series focused on intimacy, architecture, and the emotional weight of negative space.
+        - article [ref=e107]:
+          - generic [ref=e108]:
+            - paragraph [ref=e109]: "2021"
+            - heading "Creative Direction Residency" [level=3] [ref=e110]
+            - paragraph [ref=e111]: Refined a brand-led image language for fashion and travel storytelling, with emphasis on movement, texture, and tone.
+    - generic [ref=e113]:
+      - generic [ref=e114]:
+        - generic [ref=e115]:
+          - paragraph [ref=e116]: Digital Art
+          - heading "DIGITAL ART" [level=2] [ref=e117]
+        - paragraph [ref=e118]: A curated selection of dreamlike studies, textural collages, and visual experiments built to sit between photography and painting.
+      - generic [ref=e119]:
+        - link "Digital art composition in monochrome Velvet Silence Mixed Media Study" [ref=e120] [cursor=pointer]:
+          - /url: https://picsum.photos/seed/jzanaia-art-1/1600/2000
+          - img "Digital art composition in monochrome"
+          - generic [ref=e121]:
+            - strong [ref=e122]: Velvet Silence
+            - text: Mixed Media Study
+        - link "Abstract digital portrait artwork Afterglow Portrait Fragment" [ref=e123] [cursor=pointer]:
+          - /url: https://picsum.photos/seed/jzanaia-art-2/1600/1800
+          - img "Abstract digital portrait artwork"
+          - generic [ref=e124]:
+            - strong [ref=e125]: Afterglow
+            - text: Portrait Fragment
+        - link "Cinematic digital collage artwork Nocturne Layered Collage" [ref=e126] [cursor=pointer]:
+          - /url: https://picsum.photos/seed/jzanaia-art-3/1600/2200
+          - img "Cinematic digital collage artwork"
+          - generic [ref=e127]:
+            - strong [ref=e128]: Nocturne
+            - text: Layered Collage
+        - link "Luxury-inspired conceptual digital piece Static Bloom Texture Sequence" [ref=e129] [cursor=pointer]:
+          - /url: https://picsum.photos/seed/jzanaia-art-4/1600/1750
+          - img "Luxury-inspired conceptual digital piece"
+          - generic [ref=e130]:
+            - strong [ref=e131]: Static Bloom
+            - text: Texture Sequence
+        - link "Soft contrast digital artwork Pale Echo Light Sculpture" [ref=e132] [cursor=pointer]:
+          - /url: https://picsum.photos/seed/jzanaia-art-5/1600/2100
+          - img "Soft contrast digital artwork"
+          - generic [ref=e133]:
+            - strong [ref=e134]: Pale Echo
+            - text: Light Sculpture
+        - link "Editorial-inspired digital art image Threshold Editorial Motion" [ref=e135] [cursor=pointer]:
+          - /url: https://picsum.photos/seed/jzanaia-art-6/1600/1900
+          - img "Editorial-inspired digital art image"
+          - generic [ref=e136]:
+            - strong [ref=e137]: Threshold
+            - text: Editorial Motion
+        - link "Dreamlike visual art panel Low Tide Dream Sequence" [ref=e138] [cursor=pointer]:
+          - /url: https://picsum.photos/seed/jzanaia-art-7/1600/2150
+          - img "Dreamlike visual art panel"
+          - generic [ref=e139]:
+            - strong [ref=e140]: Low Tide
+            - text: Dream Sequence
+        - link "Monochrome experimental digital artwork Contour Monochrome Study" [ref=e141] [cursor=pointer]:
+          - /url: https://picsum.photos/seed/jzanaia-art-8/1600/1850
+          - img "Monochrome experimental digital artwork"
+          - generic [ref=e142]:
+            - strong [ref=e143]: Contour
+            - text: Monochrome Study
+    - generic [ref=e145]:
+      - generic [ref=e146]:
+        - generic [ref=e147]:
+          - paragraph [ref=e148]: Photography
+          - heading "PHOTOGRAPHY" [level=2] [ref=e149]
+        - generic [ref=e150]:
+          - button "All" [ref=e151] [cursor=pointer]
+          - button "Portrait" [ref=e152] [cursor=pointer]
+          - button "Landscape" [ref=e153] [cursor=pointer]
+          - button "Street" [ref=e154] [cursor=pointer]
+          - button "Travel" [ref=e155] [cursor=pointer]
+      - generic [ref=e156]:
+        - link "Portrait photography close-up Portrait Velvet Light" [ref=e157] [cursor=pointer]:
+          - /url: https://picsum.photos/seed/jzanaia-photo-1/1800/2200
+          - img "Portrait photography close-up" [ref=e158]
+          - generic [ref=e160]:
+            - generic [ref=e161]: Portrait
+            - text: Velvet Light
+        - link "Landscape photography horizon Landscape Silent Horizon" [ref=e162] [cursor=pointer]:
+          - /url: https://picsum.photos/seed/jzanaia-photo-2/1800/2200
+          - img "Landscape photography horizon" [ref=e163]
+          - generic [ref=e165]:
+            - generic [ref=e166]: Landscape
+            - text: Silent Horizon
+        - link "Street photography in cinematic lighting Street Midnight Passage" [ref=e167] [cursor=pointer]:
+          - /url: https://picsum.photos/seed/jzanaia-photo-3/1800/2200
+          - img "Street photography in cinematic lighting" [ref=e168]
+          - generic [ref=e170]:
+            - generic [ref=e171]: Street
+            - text: Midnight Passage
+        - link "Travel photography with warm light Travel Distant Gold" [ref=e172] [cursor=pointer]:
+          - /url: https://picsum.photos/seed/jzanaia-photo-4/1800/2200
+          - img "Travel photography with warm light" [ref=e173]
+          - generic [ref=e175]:
+            - generic [ref=e176]: Travel
+            - text: Distant Gold
+        - link "Editorial portrait photography Portrait Quiet Gaze" [ref=e177] [cursor=pointer]:
+          - /url: https://picsum.photos/seed/jzanaia-photo-5/1800/2200
+          - img "Editorial portrait photography" [ref=e178]
+          - generic [ref=e180]:
+            - generic [ref=e181]: Portrait
+            - text: Quiet Gaze
+        - link "Landscape photography with mountains Landscape Mist Frame" [ref=e182] [cursor=pointer]:
+          - /url: https://picsum.photos/seed/jzanaia-photo-6/1800/2200
+          - img "Landscape photography with mountains" [ref=e183]
+          - generic [ref=e185]:
+            - generic [ref=e186]: Landscape
+            - text: Mist Frame
+        - link "Street photograph in urban setting Street Neon Quiet" [ref=e187] [cursor=pointer]:
+          - /url: https://picsum.photos/seed/jzanaia-photo-7/1800/2200
+          - img "Street photograph in urban setting" [ref=e188]
+          - generic [ref=e190]:
+            - generic [ref=e191]: Street
+            - text: Neon Quiet
+        - link "Travel image with architecture Travel Open Passage" [ref=e192] [cursor=pointer]:
+          - /url: https://picsum.photos/seed/jzanaia-photo-8/1800/2200
+          - img "Travel image with architecture" [ref=e193]
+          - generic [ref=e195]:
+            - generic [ref=e196]: Travel
+            - text: Open Passage
+    - generic [ref=e198]:
+      - generic [ref=e199]:
+        - paragraph [ref=e200]: Contact
+        - heading "LET'S CREATE" [level=2] [ref=e201]
+        - paragraph [ref=e202]: I take on a small number of commissions each season to keep every collaboration intimate, precise, and fully tailored.
+        - generic [ref=e203]:
+          - generic [ref=e204]:
+            - paragraph [ref=e205]: Email
+            - link "hello@jzanaia.com" [ref=e206] [cursor=pointer]:
+              - /url: mailto:hello@jzanaia.com
+          - generic [ref=e207]:
+            - paragraph [ref=e208]: Follow
+            - generic [ref=e209]:
+              - link "Instagram" [ref=e210] [cursor=pointer]:
+                - /url: https://instagram.com
+              - link "Behance" [ref=e211] [cursor=pointer]:
+                - /url: https://behance.net
+              - link "Pinterest" [ref=e212] [cursor=pointer]:
+                - /url: https://pinterest.com
+      - generic [ref=e214]:
+        - generic [ref=e215]:
+          - generic [ref=e216]: Name
+          - textbox "Name" [ref=e217]:
+            - /placeholder: Your name
+        - generic [ref=e218]:
+          - generic [ref=e219]: Email
+          - textbox "Email" [ref=e220]:
+            - /placeholder: Your email
+        - generic [ref=e221]:
+          - generic [ref=e222]: Message
+          - textbox "Message" [ref=e223]:
+            - /placeholder: Tell me about your project
+        - generic [ref=e224]:
+          - button "Send Inquiry" [ref=e225] [cursor=pointer]
+          - paragraph
+  - contentinfo [ref=e226]:
+    - generic [ref=e227]:
+      - generic [ref=e228]:
+        - generic [ref=e229]:
+          - paragraph [ref=e230]: J. Zanaia
+          - paragraph [ref=e231]: Luxury photography portfolio crafted for elegant visual storytelling.
+        - generic [ref=e232]:
+          - link "Instagram" [ref=e233] [cursor=pointer]:
+            - /url: https://instagram.com
+          - link "Behance" [ref=e234] [cursor=pointer]:
+            - /url: https://behance.net
+          - link "Dribbble" [ref=e235] [cursor=pointer]:
+            - /url: https://dribbble.com
+        - button "Back to Top " [ref=e236] [cursor=pointer]:
+          - text: Back to Top
+          - generic [ref=e237]: 
+      - paragraph [ref=e238]: © 2026 J. Zanaia. All rights reserved.
