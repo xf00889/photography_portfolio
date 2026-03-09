@@ -303,8 +303,6 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 
   window.addEventListener("resize", updateParallax);
-});
-
 
   // Endless slider initialization
   const initEndlessSlider = (sliderId) => {
@@ -326,7 +324,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initialize both sliders
   initEndlessSlider("digital-art-slider");
   initEndlessSlider("works-slider");
-
 
   // Reviews System with localStorage (Optimized for storage)
   const reviewsKey = "portfolio_reviews";
@@ -500,3 +497,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Load reviews on page load
   loadReviews();
+
+});
