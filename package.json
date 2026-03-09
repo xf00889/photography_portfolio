@@ -7,9 +7,6 @@
     "build": "echo 'Static site - no build needed'",
     "start": "npx http-server -p 3000"
   },
-  "dependencies": {
-    "@vercel/analytics": "^1.1.1"
-  },
   "devDependencies": {
     "http-server": "^14.1.1"
   },
