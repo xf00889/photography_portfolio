@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
 
+  <link rel="preload" href="/img/hero.jpg" as="image" fetchpriority="high">
   <link rel="preload" href="/css/style.css" as="style">
   <link rel="preload" href="/js/script.js" as="script">
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
@@ -97,17 +98,17 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="hero-media has-parallax absolute inset-0" data-parallax="0.2">
-                <img class="h-full w-full object-cover" src="https://picsum.photos/seed/jzanaia-hero-1/1920/1200" alt="Luxury editorial portrait" fetchpriority="high" width="1920" height="1200">
+                <img class="h-full w-full object-cover" src="/img/hero.jpg" alt="Luxury editorial portrait" fetchpriority="high" width="1920" height="1200">
               </div>
             </div>
             <div class="swiper-slide">
               <div class="hero-media has-parallax absolute inset-0" data-parallax="0.24">
-                <img class="h-full w-full object-cover" src="https://picsum.photos/seed/jzanaia-hero-2/1920/1200" alt="Cinematic landscape photography" loading="eager" width="1920" height="1200">
+                <img class="h-full w-full object-cover" src="/img/1.jpg" alt="Photography work" loading="lazy" width="1920" height="1200">
               </div>
             </div>
             <div class="swiper-slide">
               <div class="hero-media has-parallax absolute inset-0" data-parallax="0.22">
-                <img class="h-full w-full object-cover" src="https://picsum.photos/seed/jzanaia-hero-3/1920/1200" alt="Street photography at dusk" loading="eager" width="1920" height="1200">
+                <img class="h-full w-full object-cover" src="/img/2.jpg" alt="Photography work" loading="lazy" width="1920" height="1200">
               </div>
             </div>
           </div>
@@ -463,12 +464,12 @@ h2 class="section-title" data-aos="fade-up" data-aos-delay="100">CLIENT TESTIMON
     </button>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script src="/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+  <script src="/js/script.js" defer></script>
   <script type="module">
     import { inject } from 'https://cdn.jsdelivr.net/npm/@vercel/analytics@1.1.1/+esm';
     inject();

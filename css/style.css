@@ -847,3 +847,25 @@ input.contact-input:-webkit-autofill:active {
   -webkit-text-fill-color: #ffffff !important;
   color: #ffffff !important;
 }
+
+/* Critical CSS optimizations */
+.hero-media img {
+  content-visibility: auto;
+}
+
+/* Reduce animation complexity for better performance */
+@media (prefers-reduced-motion: no-preference) {
+  .hero-media img {
+    will-change: transform;
+  }
+}
+
+/* Optimize slider performance */
+.slider-track {
+  contain: layout style paint;
+}
+
+.slider-item img {
+  content-visibility: auto;
+  contain-intrinsic-size: 350px 450px;
+}
