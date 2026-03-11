@@ -316,10 +316,37 @@ document.addEventListener("DOMContentLoaded", () => {
   initEndlessSlider("works-slider");
 
   // Reviews System with JSON file (visible to all visitors)
-  const reviewsGrid = document.getElementById("reviews-grid");
+  const reviewsRow1 = document.getElementById("reviews-row-1");
+  const reviewsRow2 = document.getElementById("reviews-row-2");
+  const reviewsRow3 = document.getElementById("reviews-row-3");
   const reviewForm = document.getElementById("review-form");
   const starButtons = Array.from(document.querySelectorAll(".star-btn"));
   const ratingInput = document.getElementById("review-rating");
+
+  // Create review card HTML
+  const createReviewCard = (review) => {
+    const initial = (review.name || "?").charAt(0).toUpperCase();
+    const stars = "★".repeat(review.rating || 5) + "☆".repeat(5 - (review.rating || 5));
+    const date = new Date(review.timestamp).toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "short",
+      day: "numeric"
+    });
+
+    return `
+      <div class="review-card">
+        <div class="review-header">
+          <div class="review-avatar">${initial}</div>
+          <div class="review-info">
+            <h4>${review.name}</h4>
+            <div class="review-stars">${stars}</div>
+          </div>
+        </div>
+        <p class="review-message">${review.message}</p>
+        <p class="review-date">${date}</p>
+      </div>
+    `;
+  };
 
   // Load reviews from Cloudflare Pages Function
   const loadReviews = async () => {
@@ -331,52 +358,53 @@ document.addEventListener("DOMContentLoaded", () => {
       const reviews = allReviews.filter(r => r.approved !== false);
       
       if (reviews.length === 0) {
-        reviewsGrid.innerHTML = `
-          <div class="col-span-full text-center py-12">
-            <p class="text-white/50 text-lg">No reviews yet. Be the first to leave a review!</p>
+        // Show placeholder message in first row only
+        reviewsRow1.innerHTML = `
+          <div class="review-card">
+            <p class="text-white/50 text-center py-4">No reviews yet. Be the first to leave a review!</p>
           </div>
         `;
+        reviewsRow2.innerHTML = '';
+        reviewsRow3.innerHTML = '';
         return;
       }
 
-      reviewsGrid.innerHTML = reviews
-        .sort((a, b) => b.timestamp - a.timestamp)
-        .map((review) => {
-          const initial = (review.name || "?").charAt(0).toUpperCase();
-          const stars = "★".repeat(review.rating || 5) + "☆".repeat(5 - (review.rating || 5));
-          const date = new Date(review.timestamp).toLocaleDateString("en-US", {
-            year: "numeric",
-            month: "short",
-            day: "numeric"
-          });
-
-          return `
-            <div class="review-card" data-aos="fade-up">
-              <div class="review-header">
-                <div class="review-avatar">${initial}</div>
-                <div class="review-info">
-                  <h4>${review.name}</h4>
-                  <div class="review-stars">${stars}</div>
-                </div>
-              </div>
-              <p class="review-message">${review.message}</p>
-              <p class="review-date">${date}</p>
-            </div>
-          `;
-        })
-        .join("");
-
-      // Reinitialize AOS for new elements
-      if (window.AOS) {
-        AOS.refresh();
+      // Sort reviews by timestamp (newest first)
+      const sortedReviews = reviews.sort((a, b) => b.timestamp - a.timestamp);
+      
+      // Duplicate reviews to create seamless loop
+      const reviewsHTML = sortedReviews.map(createReviewCard).join('');
+      const duplicatedHTML = reviewsHTML + reviewsHTML;
+      
+      // Distribute reviews across three rows
+      // For better visual effect, we'll split them differently
+      const reviewsPerRow = Math.ceil(sortedReviews.length / 3);
+      
+      const row1Reviews = sortedReviews.slice(0, reviewsPerRow);
+      const row2Reviews = sortedReviews.slice(reviewsPerRow, reviewsPerRow * 2);
+      const row3Reviews = sortedReviews.slice(reviewsPerRow * 2);
+      
+      // If we have enough reviews, distribute them; otherwise duplicate
+      if (sortedReviews.length >= 6) {
+        reviewsRow1.innerHTML = row1Reviews.map(createReviewCard).join('') + row1Reviews.map(createReviewCard).join('');
+        reviewsRow2.innerHTML = row2Reviews.map(createReviewCard).join('') + row2Reviews.map(createReviewCard).join('');
+        reviewsRow3.innerHTML = row3Reviews.map(createReviewCard).join('') + row3Reviews.map(createReviewCard).join('');
+      } else {
+        // For fewer reviews, duplicate across all rows
+        reviewsRow1.innerHTML = duplicatedHTML;
+        reviewsRow2.innerHTML = duplicatedHTML;
+        reviewsRow3.innerHTML = duplicatedHTML;
       }
+
     } catch (error) {
       console.error("Error loading reviews:", error);
-      reviewsGrid.innerHTML = `
-        <div class="col-span-full text-center py-12">
-          <p class="text-white/50 text-lg">Unable to load reviews. Please try again later.</p>
+      reviewsRow1.innerHTML = `
+        <div class="review-card">
+          <p class="text-white/50 text-center py-4">Unable to load reviews. Please try again later.</p>
         </div>
       `;
+      reviewsRow2.innerHTML = '';
+      reviewsRow3.innerHTML = '';
     }
   };
 
