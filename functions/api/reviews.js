@@ -4,7 +4,17 @@
 export async function onRequestGet({ env }) {
   try {
     // Get reviews from KV storage
-    const reviews = await env.REVIEWS_KV?.get('reviews', { type: 'json' }) || [];
+    const reviewsData = await env.REVIEWS_KV?.get('reviews');
+    let reviews = [];
+    
+    if (reviewsData) {
+      try {
+        reviews = JSON.parse(reviewsData);
+      } catch (e) {
+        console.error('Failed to parse reviews:', e);
+        reviews = [];
+      }
+    }
     
     return new Response(JSON.stringify(reviews), {
       headers: {
@@ -34,7 +44,17 @@ export async function onRequestPost({ request, env }) {
     }
 
     // Get existing reviews
-    const reviews = await env.REVIEWS_KV?.get('reviews', { type: 'json' }) || [];
+    const reviewsData = await env.REVIEWS_KV?.get('reviews');
+    let reviews = [];
+    
+    if (reviewsData) {
+      try {
+        reviews = JSON.parse(reviewsData);
+      } catch (e) {
+        console.error('Failed to parse existing reviews:', e);
+        reviews = [];
+      }
+    }
     
     // Add new review
     const newReview = {
