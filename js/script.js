@@ -426,6 +426,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     try {
+      console.log('Submitting review to /api/reviews...');
       const response = await fetch('/api/reviews', {
         method: 'POST',
         headers: {
@@ -434,7 +435,9 @@ document.addEventListener("DOMContentLoaded", () => {
         body: JSON.stringify({ name, message, rating })
       });
 
+      console.log('Response status:', response.status);
       const result = await response.json();
+      console.log('Response data:', result);
       
       if (response.ok) {
         alert(result.message || "Thank you for your review!");
@@ -456,7 +459,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     } catch (error) {
       console.error("Error submitting review:", error);
-      alert("Failed to submit review. Please check your connection and try again.");
+      alert("Failed to submit review. Error: " + error.message);
     }
   });
 
