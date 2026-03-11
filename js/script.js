@@ -425,42 +425,55 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    try {
-      console.log('Submitting review to /api/reviews...');
-      const response = await fetch('/api/reviews', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ name, message, rating })
-      });
-
-      console.log('Response status:', response.status);
-      const result = await response.json();
-      console.log('Response data:', result);
-      
-      if (response.ok) {
-        alert(result.message || "Thank you for your review!");
-        reviewForm.reset();
-        
-        // Reset stars to 5
-        selectedRating = 5;
-        ratingInput.value = 5;
-        starButtons.forEach((btn) => {
-          btn.classList.add("active");
-          const icon = btn.querySelector("i");
-          icon.className = "ri-star-fill text-2xl";
+    // Retry logic for cold starts
+    const submitReview = async (retries = 2) => {
+      try {
+        console.log('Submitting review to /api/reviews...');
+        const response = await fetch('/api/reviews', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ name, message, rating })
         });
+
+        console.log('Response status:', response.status);
+        const result = await response.json();
+        console.log('Response data:', result);
         
-        // Reload reviews to show the new one
-        loadReviews();
-      } else {
-        alert(result.error || "Failed to submit review. Please try again.");
+        if (response.ok) {
+          alert(result.message || "Thank you for your review!");
+          reviewForm.reset();
+          
+          // Reset stars to 5
+          selectedRating = 5;
+          ratingInput.value = 5;
+          starButtons.forEach((btn) => {
+            btn.classList.add("active");
+            const icon = btn.querySelector("i");
+            icon.className = "ri-star-fill text-2xl";
+          });
+          
+          // Reload reviews to show the new one
+          loadReviews();
+        } else {
+          alert(result.error || "Failed to submit review. Please try again.");
+        }
+      } catch (error) {
+        console.error("Error submitting review:", error);
+        
+        // Retry on connection errors (cold start)
+        if (retries > 0 && error.message.includes('fetch')) {
+          console.log(`Retrying... (${retries} attempts left)`);
+          await new Promise(resolve => setTimeout(resolve, 1000));
+          return submitReview(retries - 1);
+        }
+        
+        alert("Failed to submit review. Error: " + error.message);
       }
-    } catch (error) {
-      console.error("Error submitting review:", error);
-      alert("Failed to submit review. Error: " + error.message);
-    }
+    };
+
+    await submitReview();
   });
 
   // Load reviews on page load
